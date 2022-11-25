@@ -6,6 +6,7 @@
     box-sizing: border-box;
     color: #004CA4;
     font-family: 'DM Sans', sans-serif;
+    transition: 0.5s;
 }
 ul{
     list-style: none;
@@ -29,6 +30,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+nav input, nav label{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -44,6 +49,11 @@ nav .menu ul{
 }
 nav .menu ul li{
     font-size: 18px;
+}
+nav .menu ul li a{
+    padding: 8px 20px;
+    display: inline-block;
+    border-radius: 10px;
 }
 button{
     padding: 15px 20px;
@@ -321,7 +331,7 @@ button:hover{
 }
 .testimontials{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 50px;
     margin-top: 50px;
 }

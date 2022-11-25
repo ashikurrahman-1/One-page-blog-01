@@ -1,0 +1,109 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 36em) { 
+   
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 48em) {
+     /* Home section */
+     
+    nav .menu ul{
+        flex-direction: column;
+        right: -100%;
+        display: none;
+        position: absolute;
+        gap: 20px;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    nav label{
+        display: block;
+    }
+    nav input:checked ~ .menu ul{
+        display: block;
+        right: 0;
+        top: 100%;
+        background-color: lightgreen;
+        padding: 20px;
+        border-radius: 20px;
+        opacity: 1;
+    }
+    nav input:checked ~ .menu ul li a:hover{
+        display: inline-block;
+        background-color: lightcoral;
+    }
+     .home{
+        flex-wrap: wrap;
+    }
+    .home .home-left{
+        flex-basis: 100%;
+    }
+    .home .home-right{
+        flex-basis: 100%;
+    }
+
+    /* Industry section */
+    .product .product-items{
+        flex-wrap: wrap;
+    }
+
+    /* Feature section */
+    .f-one, .f-two{
+        flex-wrap: wrap;
+    }
+
+    .f-one .f-one-right, .f-two .f-two-left{
+        padding: 0 10px;
+    }
+
+    /* Runner section */
+    .runner{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .runner .runner-right img{
+        width: 100%;
+        margin-bottom: -25px;
+    }
+    .runner ul{
+        flex-wrap: wrap;
+    }
+
+    /* Testimonial section */
+    .t-one, .t-two, .t-three, .t-four{
+        flex-wrap: wrap;
+    }
+    .testimontials img{
+        width: 100%;
+    }
+
+    /* Dive section */
+    .dive{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .dive ul{
+        margin: 30px 0;
+        gap: 0;
+    }
+    .dive img{
+        width: 100%;
+    }
+
+    /* footer section */
+    .footer-top-left, .footer-bottom .footer-bottom-left{
+        display: none;
+    }
+}
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 62em) {
+
+}
+
+
+/* // Large devices (desktops, greater than 1200px) */
+@media (min-width: 75em) {
+
+}
